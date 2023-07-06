@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let a =34;
+    console.log(a);
+    document.addEventListener("click",function click()
+    {
+      console.log("clicked on it");
+      let conf=confirm("are you sure?");
+      if(conf)
+        alert("done");
+      else
+        alert("cancelled");
+    })
+    setTimeout(() => { //setTimeout is used to perform an action within a console after a period of time mentioned
+      console.log("printing after");  
+    }, 3000);
+    console.log("printing before");
+  </script>
+</head>
+<body>
+  <h1> I am learning react</h1>
+</body>
+</html>
