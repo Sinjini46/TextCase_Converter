@@ -39,7 +39,7 @@ function App() {
     //within return JSX is written
     <>
     <Router>
-      <Navbar title="TEXT CONVERTER" Home="Home" About="About" mode={mode} toggle={toggle} changeg={green} changey={yellow} changer={red} changep={purple}></Navbar>
+      <Navbar title="TEXT CASE CONVERTER" Home="Home" About="About" mode={mode} toggle={toggle} changeg={green} changey={yellow} changer={red} changep={purple}></Navbar>
       {/*<Navbar></Navbar>*/}
       <div className="container my-3">
       <Routes> 

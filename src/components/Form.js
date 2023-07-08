@@ -23,7 +23,7 @@ export default function Form(props) {
     /* console.log("on change"); */
     setText(event.target.value);
   }
-  const [text,setText]=useState("Enter Text here");
+  const [text,setText]=useState(" ");
   return (
     <>
     <div className="container">
@@ -41,7 +41,7 @@ export default function Form(props) {
       <p style={{color:props.mode==='dark'?'white':'black'}}>{text.trim() === '' ? 0 : text.match(/\S+/g).length} words and {text.replace(/\s+/g, '').length} characters</p>
       <p style={{color:props.mode==='dark'?'white':'black'}}>{0.08*text.split(" ").length} Minutes read</p>
       <h2 style={{color:props.mode==='dark'?'white':'black'}}>Preview</h2>
-      <p style={{color:props.mode==='dark'?'white':'black'}}>{text}</p>
+      <p style={{color:props.mode==='dark'?'white':'black'}}>{text.length > 0 ? text: "Enter something in the textbox above to preview it here"}</p>
     </div>
     </>
   );
