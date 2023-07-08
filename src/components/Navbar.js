@@ -1,6 +1,5 @@
 import React from "react"; 
 import "./Navbar.css";
-import { Link } from "react-router-dom"
 import propTypes from "prop-types";
 export default function Navbar(props) {
   return (
@@ -24,16 +23,6 @@ export default function Navbar(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">
-                {props.Home}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/About">
-                {props.About}
-              </Link>
-            </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -121,5 +110,4 @@ export default function Navbar(props) {
 }
 Navbar.propTypes = {
   title: propTypes.string.isRequired,
-  About: propTypes.string,
 };

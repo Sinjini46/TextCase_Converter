@@ -2,12 +2,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Form from "./components/Form";
-import About from "./components/About";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
 import React,{ useState } from "react";
 function App() {
   const [mode,setmode]=useState('light');
@@ -38,16 +32,10 @@ function App() {
   return (
     //within return JSX is written
     <>
-    <Router>
-      <Navbar title="TEXT CASE CONVERTER" Home="Home" About="About" mode={mode} toggle={toggle} changeg={green} changey={yellow} changer={red} changep={purple}></Navbar>
-      {/*<Navbar></Navbar>*/}
+      <Navbar title="TEXT CASE CONVERTER" Home="Home" About="About" mode={mode} toggle={toggle} changeg={green} changey={yellow} changer={red} changep={purple}/>
       <div className="container my-3">
-      <Routes> 
-          <Route exact path="/about" element={<About mode={mode} changeg={green} changey={yellow} changer={red} changep={purple}/>} />
-          <Route exact path="/" element={<Form heading="Enter the text" mode={mode}/>} />
-          </Routes>
+        <Form heading="Enter the text" mode={mode}/>
       </div>
-      </Router>
     </>
   );
 }
