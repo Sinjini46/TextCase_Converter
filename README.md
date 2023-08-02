@@ -35,3 +35,7 @@ Click the appropriate button to perform the desired action.
 
 # License
 Text Converter is licensed under the MIT License. 
+
+# Link to the site :
+
+https://sinjini46.github.io/TextCase_Converter/
